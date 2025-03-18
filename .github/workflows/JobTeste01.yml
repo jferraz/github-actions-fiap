@@ -15,16 +15,20 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs: 
+
   build:   
+  
     runs-on: ubuntu-latest
+    
     steps:      
+    
       - uses: actions/checkout@v4
       
-      - name: Executando um comando simples
-        run: echo Olá, mundo! Primeiro job no GitHub Actions!
-      
-      - name: Step 1
-        run: echo Olá, mundo! Primeiro job no GitHub Actions! 
-        
-      - name: Step 2
-        run: echo Olá, mundo! Primeiro job no GitHub Actions!
+      - name: Run a step 1
+        run: echo Ola, mundo!
+
+      - name: Run a step 2
+        run: echo Hello, World!
+
+      - name: Run a step 3
+        run: echo Hola, mundo!
